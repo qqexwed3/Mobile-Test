@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>ThaiCreate.Com Tutorial</title>
+</head>
+<body>
+
+ <script type="text/javascript">  
+ /* Thanks to Dr.Yes for this function .. eiei */<br>  
+ function okp(e) {  
+   if (!document.all && e.keyCode>0) { return true; }  
+   var allowable = '0123456789.';  
+   var c = document.all ? String.fromCharCode(e.keyCode) : String.fromCharCode(e.charCode);  
+   if (allowable.indexOf(c)<0) {  
+     alert('ใส่ตัวเลขได้เท่านั้น');  
+     return false;  
+   } else {  
+     return true;  
+   }  
+ }  
+ </script>  
+ <input type="text" onkeypress="return okp(event)"/>  
+</body>
+</html>
